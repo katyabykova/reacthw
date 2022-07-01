@@ -1,0 +1,9 @@
+.box{
+    display: flex;
+}
+h2{
+ text-align: center;
+}
+.App{
+    width: 800px;
+}

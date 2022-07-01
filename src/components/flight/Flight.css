@@ -1,0 +1,13 @@
+img{
+    width: 80px;
+}
+.flight{
+    border: 1px solid palegreen;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    margin: 10px;
+}
