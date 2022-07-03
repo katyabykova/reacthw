@@ -1,20 +1,22 @@
-import {getUsers} from "../../services/user.api.services";
-
+import {getAllUsers} from "../../services/user.api.services";
 import React, {useEffect, useState} from 'react';
 import User from "../user/User";
 
-const Users = () => {
+
+const Users = ({getUserId}) => {
 
     let [users, setUsers] = useState([]);
+
     useEffect(() => {
-        getUsers().then(value => setUsers([...value]))
+        getAllUsers().then(({data}) => setUsers([...data]))
     }, [])
     return (
         <div>
             {
-                users.map((value,index) => <User
-                user={value}
-                key={index}
+                users.map((value, index) => <User
+                    user={value}
+                    key={index}
+                    getUserId={getUserId}
                 />)
             }
         </div>
