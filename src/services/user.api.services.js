@@ -1,4 +1,4 @@
-
+import axios from 'axios';
 
 let url = 'https://jsonplaceholder.typicode.com/users';
 
@@ -10,5 +10,6 @@ const getUser = (id) => fetch(url + '/'+id)
 
 const usersPosts = (id) =>fetch(url+'/'+id+'/'+'posts')
     .then(value => value.json());
+
 
 export {getUser,getUsers,usersPosts};

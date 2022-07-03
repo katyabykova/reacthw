@@ -1,0 +1,14 @@
+.App{
+    display: flex;
+    justify-content: space-evenly;
+}
+.users,.posts{
+    border: 1px solid pink;
+    padding: 10px;
+}
+.users{
+    width: 30vw;
+}
+.posts{
+    width: 60vw;
+}
