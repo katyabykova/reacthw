@@ -1,5 +1,6 @@
 import React from 'react';
 import {useForm} from "react-hook-form";
+import {setComments} from "../services/Form.comments.api.serices";
 
 const FormComments = () => {
     let {register, handleSubmit, formState: {errors}} = useForm({
@@ -11,16 +12,11 @@ const FormComments = () => {
     })
 
 
-    function submit(value) {
+    const submit = (data) => {
 
 
-        fetch("https://jsonplaceholder.typicode.com/comments", {
-            method: 'POST',
-            headers: {'Content-Type': 'application/json; charset=UTF-8',},
-            body: JSON.stringify(value)
-        })
-            .then(response => response.json())
-            .then(result => console.log(result))
+        setComments(data).then(({data}) => console.log(data))
+
     }
 
     return (

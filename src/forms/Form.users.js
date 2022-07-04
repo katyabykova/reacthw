@@ -1,5 +1,7 @@
 import React from 'react';
 import {useForm} from "react-hook-form";
+import {setUsers} from "../services/Form.users.api.services";
+
 
 const FormUsers = () => {
 
@@ -24,13 +26,7 @@ const FormUsers = () => {
     function submit(value) {
 
 
-        fetch("https://jsonplaceholder.typicode.com/users", {
-            method: 'POST',
-            headers: {'Content-Type': 'application/json; charset=UTF-8',},
-            body: JSON.stringify(value)
-        })
-            .then(response => response.json())
-            .then(result => console.log(result))
+        setUsers({value}).then(result => console.log(result))
     }
 
     return (
