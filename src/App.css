@@ -1,0 +1,11 @@
+.formUsers, .formComents{
+    width: 200px;
+    border: 1px solid pink;
+    margin: 10px;
+}
+input,button{
+    margin: 10px;
+}
+.App{
+    display: flex;
+}
