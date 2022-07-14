@@ -8,7 +8,7 @@ const CommentsComponents = () => {
         getComments.then(({data}) => setComments([...data]))
     }, [])
     return (
-        <div>
+        <div className={'content'}>
             {comments.map((value, index) => <CommentsComponent value={value} key={index}/>)}
         </div>
     );

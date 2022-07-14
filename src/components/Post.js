@@ -2,7 +2,7 @@ import React from 'react';
 
 const Post = ({value}) => {
     return (
-        <div className={'content'}>
+        <div>
             Id:{value.id}, TITLE: {value.title}, BODY: {value.body}
         </div>
     );

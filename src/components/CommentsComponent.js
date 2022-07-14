@@ -5,10 +5,10 @@ import '../components/style.css'
 const CommentsComponent = ({value}) => {
 
     return (
-        <div className={'content'}>
+        <div>
             <Link to={value.postId.toString()}>
                 ID: {value.id}, NAME: {value.name}, BODY: {value.body}
-            </Link>
+            </Link><hr/><hr/>
         </div>
     );
 };

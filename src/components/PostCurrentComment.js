@@ -16,8 +16,9 @@ const PostCurrentComments = () => {
 
         <div>
             <h3>COMMENT'S POST:</h3>
+            <div className={'content'}>
             {posts.map((value, index) => <Post value={value} key={index}/>)}
-        </div>
+        </div></div>
     );
 };
 

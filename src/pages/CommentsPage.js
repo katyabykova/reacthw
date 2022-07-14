@@ -7,9 +7,10 @@ const CommentsPage = () => {
         <div>
             <div className={'Content'}>
                 <Outlet/>
+                <div>
                 <h3>COMMENTS:</h3>
                 <CommentsComponents/>
-            </div>
+            </div></div>
 
         </div>
     );
