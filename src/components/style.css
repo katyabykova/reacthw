@@ -1,0 +1,17 @@
+.content {
+    width: 25vw;
+    border: 1px solid pink;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+h3 {
+    width: 20vw;
+    margin: 10px;
+}
+
+.Post {
+    width: 30vw;
+    box-sizing: border-box;
+}
