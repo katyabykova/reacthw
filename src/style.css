@@ -1,0 +1,9 @@
+.App{
+    display: flex;
+}
+.Posts, .Comments{
+    width: 30vw;
+    border: 1px pink solid;
+    margin: 10px;
+    padding: 10px;
+}
