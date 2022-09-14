@@ -1,9 +1,9 @@
 import React from 'react';
 import {simpsons} from "../data";
 
-const Simpsons = ({value}) => {
+const Simpsons = () => {
     return (<div>
-            <h1>1. Описати всю сім'ю сімпсонів (5 персонажів):</h1>
+            <h3>1. Описати всю сім'ю сімпсонів (5 персонажів):</h3>
             {
                 simpsons.map(value =>
                     <div className={'simpsons'}>
