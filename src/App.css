@@ -1,10 +1,31 @@
-.App{
+.App {
     width: 100vw;
     display: flex;
+    justify-content: space-evenly;
 }
-.box{
-    width: 30vw;
+
+.box {
+    width: 15vw;
     border: 1px solid pink;
     padding: 10px;
     box-sizing: border-box;
+}
+
+.box1{
+    width: 45vw;
+    border: 1px solid pink;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+p {
+    font-style: italic;
+}
+
+img {
+    width: 5vw;
+}
+
+.flights {
+    text-align: center;
 }

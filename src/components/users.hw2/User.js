@@ -4,7 +4,7 @@ const User = ({value, chosen}) => {
     return (
         <div>
             {value.id} - {value.name}
-            <br/>
+            <br/><br/>
             <button onClick={() => {
                 chosen(value)
             }}>Деталі
